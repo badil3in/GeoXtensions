@@ -1,0 +1,137 @@
+[
+    {
+        "number": 1,
+        "name": "Standardmodul",
+        "description": [
+            {
+                "text": "Xt3dPolylinie", 
+                "subtext": [
+                    "3D-Polylinien mit Linienmustern, Parallelen, Bögen"
+                ]
+            },
+            {
+                "text": "XText",
+                "subtext": [
+                    "Ein- oder mehrzeilige Textobjekte mit verschiedenen Rahmen (Kasten, Kreis, doppelter Unterstreichung …), Bezugslinien, Hintergrundfüllungen"
+                ]
+            },
+            {
+                "text": "Notizobjekte",
+                "subtext": [
+                    "Objekte zur Verwaltung von Zeichnungsnotizen in der DWG"
+                ]
+            },
+            {
+                "text": "Zeichen- und Verwaltungsfunktionen",
+                "subtext": [
+                    "Verschieden Funktionen zur Bearbeitung von Zeichungsobjekten (Linienobjekte unterschiedlicher Type zusammenfassen, Objekte ausrichten"
+                ]
+            },
+            {
+                "text": "Konfiguration von Punkt- Linien- und Textarten",
+                "subtext": []
+            }
+        ],
+        "download": "#"
+    },
+    {
+        "number": 2,
+        "name": "Alkismodul",
+        "description": [
+            {
+                "text": "Import und Verwaltung der Katasterdaten aus einer xml",
+                "subtext": [
+                    "Flurstücke", 
+                    "Gebäude",
+                    "Verwaltungsflächen (Verkehr, Grünland usw.)",
+                    "Grenzpunkte"
+                ]
+            },
+            {
+                "text": "Erstellen von Eigentümerlisten aus den Flurstücken",
+                "subtext": []
+            },
+            {
+                "text": "Objekte zur Erstellung von Lageplänen zum Bauantrag",
+                "subtext": [
+                    "Gebäude mit automatischen Abstandsflächen",
+                    "Baugrundstücksgrenzen aus einem oder mehreren Flurstücken"
+                ]
+            }
+        ],
+        "download": "#"
+    },
+    {
+        "number": 3,
+        "name": "Verwaltung/Managementmodul",
+        "description": [
+            {
+                "text": "Erweiterte Layerverwaltung",
+                "subtext": []
+            },
+            {
+                "text": "Layoutverwaltung",
+                "subtext": []
+            },
+            {
+                "text": "Projektverwaltung",
+                "subtext": []
+            }
+        ],
+        "download": "#"
+    },
+    {
+        "number": 4,
+        "name": "Vermessungmodul (beinhaltet zusätzlich alle anderen Module)",
+        "description": [
+            {
+                "text": "Vermessungspunkte",
+                "subtext":[
+                    "Punktverwaltung",
+                    "Berechungs- und Importfunktionen inkl. GPS-Daten"
+                ]
+            },
+            {
+                "text": "Übergangsbögen",
+                "subtext":[]
+            },
+            {
+                "text": "Punkt-, Linien-, Flächenbeschriftungen",
+                "subtext":[]
+            },
+            {
+                "text": "Stationierungsbeschriftung",
+                "subtext":[]
+            },
+            {
+                "text": "Oberflächenabrechnung",
+                "subtext":[]
+            },
+            {
+                "text": "Rahmenverwaltung inkl. Koordinatenrahmen und automatischer Layouterstellung",
+                "subtext":[]
+            },
+            {
+                "text": "Verwaltung und Darstellung von Schacht-/ Kanaldaten über die Vermessungspunkte",
+                "subtext":[]
+            },
+            {
+                "text": "Baumkatasterverwaltung und Darstellung über die Vermessungspunkte",
+                "subtext":[]
+            },
+            {
+                "text": "Profilachsen, Längs- und Querprofile",
+                "subtext":[]
+            },
+            {
+                "text": "Element zur Auswertung und Darstellung von Horizonzalbohrungen",
+                "subtext":[]
+            },
+            {
+                "text": "Böschungsschraffuren",
+                "subtext":[]
+            }
+        ],
+        "download": "#"
+    }
+]

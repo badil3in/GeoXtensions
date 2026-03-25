@@ -1,0 +1,19 @@
+<h1 class="mt-5">Module</h1>
+{% for module in modules %}
+    <h3> {{ module.name }}</h3>
+    <ul>
+        {% for item in module.description %}
+            <li>
+                {{ item.text }}
+                {% if item.subtext %}
+                    <ul>
+                        {% for sub in item.subtext %}
+                            <li> {{ sub }} </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    <button>Download</button>
+{% endfor %}
