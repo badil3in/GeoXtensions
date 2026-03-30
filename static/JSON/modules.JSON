@@ -1,7 +1,9 @@
 [
     {
-        "number": 1,
+        "id": 1,
         "name": "Standardmodul",
+        "version": "1.0.0",
+        "lastUpdated": "01.02.2026",
         "summary": "3D-Polylinien, Textobjekte mit Rahmen, Notizen, Funktionen zur Bearbeitung von Zeichenobjekten",
         "description": [
             {
@@ -33,11 +35,14 @@
                 "subtext": []
             }
         ],
+        "screenshots": [],
         "download": "#"
     },
     {
-        "number": 2,
+        "id": 2,
         "name": "Alkismodul",
+        "version": "1.0.1",
+        "lastUpdated": "31.12.2025",
         "summary": "Katasterdaten verwalten, Eigentümerlisten erstellen, Lagepläne erstellen",
         "description": [
             {
@@ -61,12 +66,15 @@
                 ]
             }
         ],
+        "screenshots": [],
         "download": "#"
     },
     {
-        "number": 3,
+        "id": 3,
         "name": "Verwaltungs-, Managementmodul",
-        "summary": "Layer-, Layout- Projektverwaltung",
+        "version": "1.0.1",
+        "lastUpdated": "01.03.2025",
+        "summary": "Layer-, Layout-, Projektverwaltung",
         "description": [
             {
                 "text": "Erweiterte Layerverwaltung",
@@ -81,12 +89,15 @@
                 "subtext": []
             }
         ],
+        "screenshots": [],
         "download": "#"
     },
     {
-        "number": 4,
-        "name": "Vermessungmodul",
-        "summary": "beinhaltet zusätzlich alle anderen Module - Vermessungspunkte, Übergangsbögen, Beschriftungen, Oberflächenabrechung, Rahmen, Schacht-/Kanaldaten uvm.",
+        "id": 4,
+        "name": "Vermessungsmodul",
+        "version": "1.1.2",
+        "lastUpdated": "01.08.2024",
+        "summary": "Vermessungspunkte, Übergangsbögen, Beschriftungen, Oberflächenabrechung, Rahmen, Schacht-/Kanaldaten uvm. Inkl. Standard-, Verwaltungs-, Managementmodul, Alkismodul",
         "description": [
             {
                 "text": "Vermessungspunkte",
@@ -136,6 +147,7 @@
                 "subtext":[]
             }
         ],
+        "screenshots": [],
         "download": "#"
     }
 ]

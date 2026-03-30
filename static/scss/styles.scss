@@ -2,13 +2,31 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 @import "variables";
-@import "bootstrap-overrides";
 @import "resets";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import "bootstrap-overrides";
+
+@import "darktheme-overrides";
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --bs-body-font-family: 'Inter', sans-serif;
+}
+
 footer {
     font-size: smaller !important;
+    .col-6 {
+        text-align: start;
+    }
+}
+
+main {
+    min-height: 100%;
+    position: relative;
 }
 
 hr {
@@ -23,12 +41,43 @@ nav div .navbar-collapse {
     flex-grow: 0 !important;
 }
 
-svg {
-    width: 24px;
-    height: 24px;
-    fill: #adb5bd;
-    vertical-align: sub;
+#modulesCarouselAutoplay {
+    height: 512px;
+    svg {
+        fill: $magic-tertiary-light;
+    }
+    img {
+        width: 70%;
+        height: 50%;
+        object-fit: none;
+        object-position: center;
+        position: absolute;
+        left: 20%;
+        top: 30%;
+    }
 }
+
+.navbar-toggler-icon {
+    width: 1rem;
+    color: $magic-secondary-dark;
+}
+
+.navbar-toggler {
+    border-color: $magic-secondary-dark;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: $magic-accent;
+}
+
+nav {
+    svg {
+        fill: #adb5bd;
+        vertical-align: sub;
+    }
+}
+
 
 .underline-highlight {
     height: 4px;
@@ -45,10 +94,7 @@ svg {
 
 .card {
     height: 100%;
-    svg {
-        height: 16px;
-        width: 16px;
-    }
+    width: 392px;
 }
 
 .card-img-top {
@@ -58,4 +104,37 @@ svg {
 .card-body {
     height: 224px;
     overflow-x: hidden;
+}
+
+#carousel-image1 {
+    background-image: url('/static/img/generic-img.webp');
+}
+
+#carousel-image2 {
+    background-image: url('/static/img/generic-img2.webp');
+}
+
+#carousel-image3 {
+    background-image: url('/static/img/generic-img3.webp');
+}
+
+#module-buttons {
+    max-width: 500px;
+}
+.bg-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-position: 50% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.version {
+    height: max-content;
+    width: max-content;
+    font-family: 'Source Code Pro', monospace;
+    color: $magic-tertiary-light;
+    background-color: $magic-secondary-light;
+    margin-bottom: $card-title-spacer-y;
 }

@@ -1,17 +1,27 @@
-$btn-border-radius: 0.25rem;          
-$btn-border-radius-sm: 0.15rem;        
-$btn-border-radius-lg: 0.1rem;
-$btn-border-width: 1px;
-
-$border-radius: 0.25rem;
-
-$body-font-family: "Inter";
-
 $btn-bg: #0F172A;
 $btn-font-size: 1rem;
 
+$border-color: $magic-secondary;
+
+$border-radius-lg: 0.25rem;
+
+// $body-font-family: "Inter";
 $body-bg: #F1F5F9;
+
 
 $card-bg: #fff;
 $card-border-color: none;
+$card-height: 100%;
+
+$navbar-toggler-focus-width: 0.2px;
+$navbar-toggler-focus-color: #F97316;
+
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
 

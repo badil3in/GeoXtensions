@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
-    font-family: 'Space Grotesk';
     margin: 0;
     padding: 0;
+}
+
+body {
+    min-height: 100vh;
 }

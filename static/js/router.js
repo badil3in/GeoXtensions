@@ -18,11 +18,14 @@ async function render() {
     }
 
     // context an nunjucks übergeben
-    const html = await nunjucks.render(`${page}.njk`, context);
-    document.getElementById('app').innerHTML = html;
-    console.log("Render:", `${page}.njk`);
+    const html = await nunjucks.render(`${page}.njk`, context, function (err, html) {
+        document.getElementById('app').innerHTML = html;
+        activeNav(page);
+    });
+    // document.getElementById('app').innerHTML = html;
+    // console.log("Render:", `${page}.njk`);
 
-    activeNav(page);
+    // activeNav(page);
 }
 
 // toggle nav active

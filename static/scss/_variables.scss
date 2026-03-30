@@ -14,9 +14,23 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-// // Abstufungen (hell/dunkel)
-// $magic-primary-light:  lighten($magic-primary, 20%);
-// $magic-primary-dark:   darken($magic-primary, 15%);
+$magic-primary: #0F172A;
+$magic-secondary: #64748B;
+$magic-tertiary: #F1F5F9;
+$magic-accent: #F97316;
 
-// $magic-secondary-light: lighten($magic-secondary, 20%);
-// $magic-secondary-dark:  darken($magic-secondary, 15%);
+// Abstufungen (hell/dunkel)
+$magic-primary-light:  lighten($magic-primary, 20%);
+$magic-primary-dark:   darken($magic-primary, 15%);
+
+$magic-secondary-light: lighten($magic-secondary, 20%);
+$magic-secondary-dark:  darken($magic-secondary, 15%);
+
+$magic-tertiary-light: lighten($magic-tertiary, 20%);
+$magic-tertiary-dark:  darken($magic-tertiary, 15%);
+
+$magic-accent-light: lighten($magic-accent, 20%);
+$magic-accent-dark:  darken($magic-accent, 15%);
+
+$border-radius: 0.1rem;
+$modal-content-border-radius: $btn-border-radius;

@@ -1,0 +1,9 @@
+[data-bs-theme="dark"] {
+    --bs-body-bg: #{$magic-primary};
+    --bs-border-color: #{$magic-secondary-dark};
+    --bs-primary: #{$magic-tertiary};
+    --bs-btn-bg: #{$magic-primary};
+    --bs-tertiary-bg: #{$magic-primary};
+};
+
+// modals
