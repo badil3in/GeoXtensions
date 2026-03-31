@@ -1,5 +1,5 @@
 // configure nunjucks
-nunjucks.configure('/templates', { 
+nunjucks.configure('https://badil3in.github.io/GeoXtensions/templates', { 
     autoescape: true,
     async: true 
 });
