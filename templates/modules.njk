@@ -1,4 +1,22 @@
+{% if isSearch %}
+
+    <div class="container mt-5 my-auto px-4 py-5">
+        <h1 class="display-4 mt-md-5">Suchergebnisse ( {{ modules.length }} )</h1>
+    </div>
+
+{% else %}
+
 {% include "carousel.njk" %}
+
+{% endif %}
+
+{% if modules.length == 0 %}
+    <div class="container px-4">
+        <p class="fs-4">
+            Keine Module mit diesem Suchbegriff gefunden
+        </p>
+    </div>
+{% else %}
     <div class="container-fluid py-5">
         <div class="container">
             <div class=""></div>
@@ -94,3 +112,4 @@
             </div>
         </div>
     </div>
+{% endif %}
