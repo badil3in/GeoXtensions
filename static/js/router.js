@@ -15,19 +15,22 @@ async function render() {
     if (page === "modules"){
         // fetch modules from JSON file
         // Githubpages
-        context.modules = await fetch('https://badil3in.github.io/geoxtensions/static/JSON/modules.JSON').then(r => r.json())
+        // context.modules = await fetch('https://badil3in.github.io/geoxtensions/static/JSON/modules.JSON').then(r => r.json())
         // local
-        // context = await fetch('/static/JSON/modules.JSON').then(r => r.json())
+        context = await fetch('/static/JSON/modules.JSON').then(r => r.json())
     }
+    console.log("pre data :", context.modules)
 
     // context an nunjucks übergeben
     const html = await nunjucks.render(`${page}.njk`, {
         isSearch: false,
         modules: context}, function (err, html) {
         document.getElementById('app').innerHTML = html;
+
         activeNav(page);
+
         console.log("err :", err)
-        console.log("data :", context)
+        console.log("post data :", context.modules)
 
     });
 }
@@ -76,9 +79,9 @@ async function search(query) {
     let results = [];
 
     // public
-    data.modules = await fetch('https://badil3in.github.io/geoxtensions/static/JSON/modules.JSON')
+    // data.modules = await fetch('https://badil3in.github.io/geoxtensions/static/JSON/modules.JSON')
     // local
-    // data.modules = await fetch('/static/JSON/modules.JSON')
+    data.modules = await fetch('/static/JSON/modules.JSON')
         .then(r => r.json());
 
     console.log('data: ', data);    
