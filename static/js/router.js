@@ -27,9 +27,7 @@ async function render() {
         document.getElementById('app').innerHTML = html;
         activeNav(page);
         console.log("err :", err)
-        console.log("data :", {
-            isSearch: false,
-            modules: context.modules})
+        console.log("data :", context)
 
     });
 }
